@@ -1,4 +1,4 @@
-;szablony oraz zestaw faktów
+;szablony oraz zestaw faktÃ³w
 
 (deftemplate UI-state
    (slot id (default-dynamic (gensym*)))
@@ -15,7 +15,7 @@
 (deffacts startup
    (state-list))
    
-;regu³a uruchamiaj¹ca
+;reguÅ‚a uruchamiajÄ…ca
 
 (defrule system-banner ""
 
@@ -26,7 +26,7 @@
                     (state initial)
                     (valid-answers))))
 
-;regu³y zapytañ
+;reguÅ‚y zapytaÅ„
 
 (defrule determine-video-game-based ""
 
@@ -328,9 +328,7 @@
                      (valid-answers No Yes))))
 
 
-;;;****************
-;;;* REPAIR RULES *
-;;;****************
+;reguÅ‚y koÅ„cowe
 
 (defrule nintendo-No ""
 
@@ -588,7 +586,7 @@
    (assert (UI-state (display NotUndead)
                      (state final))))
                      
-;regu³y interakcji interfejsu u¿ytkownika
+;reguÂ³y interakcji interfejsu uÂ¿ytkownika
 
 (defrule ask-question
 
